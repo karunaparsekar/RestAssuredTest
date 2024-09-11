@@ -1,4 +1,4 @@
-package Tests;
+package Tests.WeatherAPITest;
 
 import org.testng.Assert;
 import org.testng.annotations.Test;

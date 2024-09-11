@@ -1,4 +1,4 @@
-package Tests;
+package Tests.WeatherAPITest;
 import static io.restassured.RestAssured.*;
 import org.testng.annotations.BeforeClass;
 import io.restassured.specification.RequestSpecification;
