@@ -1,18 +1,20 @@
 package Tests.BookStoreAPI;
 
 import static io.restassured.RestAssured.*;
-
+import Tests.BookStoreAPI.*;
 import io.restassured.http.ContentType;
 import io.restassured.response.Response;
 
 public class APIUtils {
 	
 	//common get request
-	public static Response getRequest(String endPoint) {
-		
+	public static Response getRequest(String endPoint, String token) {
+		System.out.println(endPoint);
+		System.out.println("inside get " + token);
 		return 
-		given()
-			.contentType(ContentType.JSON)
+		BaseTest.requestSpec
+			.header("Authorization", "Bearer " + token)
+			.contentType("application/json")
 		.when()
 			.get(endPoint);
 					
@@ -22,8 +24,9 @@ public class APIUtils {
 	
 	//common post method
 	public static Response postRequest(String endPoint, Object body) {
+		System.out.println(endPoint);
 		return 
-		given()
+		BaseTest.requestSpec
 			.contentType(ContentType.JSON)
 			.body(body)
 		.when()

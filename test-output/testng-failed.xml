@@ -3,14 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Tests.WeatherAPITest">
+      <class name="Tests.BookStoreAPI.UserTest">
         <methods>
+          <include name="addUserTest"/>
+          <include name="getUserTest"/>
           <include name="setup"/>
-          <include name="retrieveWeather" invocation-numbers="0 1 2"/>
-          <include name="retrieveWeather" invocation-numbers="0"/>
-          <include name="retrieveWeather" invocation-numbers="0 1"/>
         </methods>
-      </class> <!-- Tests.WeatherAPITest -->
+      </class> <!-- Tests.BookStoreAPI.UserTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -9,10 +9,10 @@ public class BaseTest {
 	
 	@BeforeClass
 	public void setup() {
-		requestSpec = given().
-			baseUri("https://bookstore.toolsqa.com")
-			.header("Content-Type", "application/json");
-			
+		requestSpec = 
+		given().
+			baseUri("https://bookstore.toolsqa.com");
+	
 	}
 
 }

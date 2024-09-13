@@ -1,138 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="6" passed="6" failed="0" skipped="0">
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-09-09T17:07:34 EDT" name="Default suite" finished-at="2024-09-09T17:07:39 EDT" duration-ms="4702">
+  <suite started-at="2024-09-13T11:42:10 EDT" name="Default suite" finished-at="2024-09-13T11:42:17 EDT" duration-ms="7474">
     <groups>
     </groups>
-    <test started-at="2024-09-09T17:07:34 EDT" name="Default test" finished-at="2024-09-09T17:07:39 EDT" duration-ms="4702">
-      <class name="Tests.WeatherAPITest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:Tests.WeatherAPITest@d86a6f]" started-at="2024-09-09T17:07:34 EDT" name="setup" finished-at="2024-09-09T17:07:35 EDT" duration-ms="787" status="PASS">
+    <test started-at="2024-09-13T11:42:10 EDT" name="Default test" finished-at="2024-09-13T11:42:17 EDT" duration-ms="7474">
+      <class name="Tests.BookStoreAPI.UserTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:Tests.BookStoreAPI.UserTest@3646a422]" started-at="2024-09-13T11:42:10 EDT" name="setup" finished-at="2024-09-13T11:42:11 EDT" duration-ms="1015" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="retrieveWeather(java.lang.Object,java.lang.Object)[pri:0, instance:Tests.WeatherAPITest@d86a6f]" started-at="2024-09-09T17:07:35 EDT" name="retrieveWeather" data-provider="weatherAttribute" finished-at="2024-09-09T17:07:38 EDT" duration-ms="2817" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[q]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Cary]]>
-              </value>
-            </param>
-          </params>
+        <test-method signature="addUserTest()[pri:0, instance:Tests.BookStoreAPI.UserTest@3646a422]" started-at="2024-09-13T11:42:11 EDT" name="addUserTest" finished-at="2024-09-13T11:42:16 EDT" duration-ms="4935" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- retrieveWeather -->
-        <test-method signature="retrieveWeather(java.lang.Object,java.lang.Object)[pri:0, instance:Tests.WeatherAPITest@d86a6f]" started-at="2024-09-09T17:07:38 EDT" name="retrieveWeather" data-provider="weatherAttribute" finished-at="2024-09-09T17:07:38 EDT" duration-ms="220" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[id]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[4459467]]>
-              </value>
-            </param>
-          </params>
+        </test-method> <!-- addUserTest -->
+        <test-method signature="generateTokenTest()[pri:1, instance:Tests.BookStoreAPI.UserTest@3646a422]" started-at="2024-09-13T11:42:16 EDT" name="generateTokenTest" finished-at="2024-09-13T11:42:17 EDT" duration-ms="880" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- retrieveWeather -->
-        <test-method signature="retrieveWeather(java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object)[pri:0, instance:Tests.WeatherAPITest@d86a6f]" started-at="2024-09-09T17:07:38 EDT" name="retrieveWeather" data-provider="weatherAttributes" finished-at="2024-09-09T17:07:38 EDT" duration-ms="193" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[lat]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[35.7915]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[lon]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[-78.7811]]>
-              </value>
-            </param>
-          </params>
+        </test-method> <!-- generateTokenTest -->
+        <test-method signature="getUserTest()[pri:2, instance:Tests.BookStoreAPI.UserTest@3646a422]" started-at="2024-09-13T11:42:17 EDT" name="getUserTest" finished-at="2024-09-13T11:42:17 EDT" duration-ms="545" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- retrieveWeather -->
-        <test-method signature="retrieveWeather(java.lang.Object,java.lang.Object,java.lang.String)[pri:0, instance:Tests.WeatherAPITest@d86a6f]" started-at="2024-09-09T17:07:38 EDT" name="retrieveWeather" data-provider="weatherWithCountryCode" finished-at="2024-09-09T17:07:39 EDT" duration-ms="189" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[zip]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[27519]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[us]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- retrieveWeather -->
-        <test-method signature="retrieveWeather(java.lang.Object,java.lang.Object,java.lang.String)[pri:0, instance:Tests.WeatherAPITest@d86a6f]" started-at="2024-09-09T17:07:39 EDT" name="retrieveWeather" data-provider="weatherWithCountryCode" finished-at="2024-09-09T17:07:39 EDT" duration-ms="226" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[zip]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[60013]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[us]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- retrieveWeather -->
-        <test-method signature="retrieveWeather(java.lang.Object,java.lang.Object,java.lang.String)[pri:0, instance:Tests.WeatherAPITest@d86a6f]" started-at="2024-09-09T17:07:39 EDT" name="retrieveWeather" data-provider="weatherWithCountryCode" finished-at="2024-09-09T17:07:39 EDT" duration-ms="177" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[q]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Cary]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[us]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- retrieveWeather -->
-      </class> <!-- Tests.WeatherAPITest -->
+        </test-method> <!-- getUserTest -->
+      </class> <!-- Tests.BookStoreAPI.UserTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
